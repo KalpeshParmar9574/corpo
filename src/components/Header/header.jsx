@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-// Import Link from 'react-router-dom' if you're using React Router
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import logoDark from '../../assets/svg/logo-light.svg'
 import styles from './header.module.scss';
 
 const Header = () => {
@@ -42,6 +42,8 @@ const Header = () => {
 
   return (
     <>
+    <div>
+
       <div className={styles['c-sub-header-container']}>
         <div className={styles['c-sub-header-wrapper']}>
           <div className={styles['c-sub-header-contact-info-wrapper']}>
@@ -54,10 +56,13 @@ const Header = () => {
         </div>
       </div>
       <div className={styles['c-main-header-wrapper']}>
-        <nav>
+        <img className={styles['c-main-header-logo']} src={logoDark} alt="" />
+        <nav className={styles['c-main-header-wrapper-nav']}>
           {menuRender(menuItems)}
         </nav>
       </div>
+    </div>
+
     </>
   );
 };
