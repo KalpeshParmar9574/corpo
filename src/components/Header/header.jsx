@@ -25,7 +25,7 @@ const Header = () => {
             {item.subItems ? (
               // Render dropdown menu if there are subItems
               <>
-                <span>{item.label}</span>
+                <span className={styles['menu-item--top-level']}>{item.label}</span>
                 <ul className={styles['c-main-header-sub-menu']}>
                   {menuRender(item.subItems)}
                 </ul>

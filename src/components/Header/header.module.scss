@@ -48,17 +48,29 @@
     a{
         color:  $color-text; 
         text-decoration: none;
+        &:hover{
+            color:  $color-text-active; 
+        }
     }
 
 }
+.menu-item--top-level{
+    border: 1px solid black;
+    &:hover {
+        cursor: pointer;
+        + .c-main-header-menu {
+            display: block;
+        }
+    }
+}
 .c-main-header-sub-menu{
     display: block;
-    position: absolute;
-   +.c-main-header-menu{
-        display: block;
-        position: relative;
-        right: 0px;
-        // top: 6px;
-        padding: 5px;
+    position: relative;
+   .c-main-header-menu{
+        display: none !important;
+        position: absolute;
+        left: 4px;
+        top:4px;
+        width: max-content !important;
     }
 }
