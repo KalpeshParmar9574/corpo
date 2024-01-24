@@ -1,7 +1,6 @@
 @import '../../assets/styles/_variable.scss';
 
 .c-sub-header-container {
-    width: 100%;
     background-color: $panel-color-main;
 }
 .c-sub-header-wrapper{
@@ -11,10 +10,55 @@
     padding: 0px 10px;
 }
 .c-sub-header-contact-info-wrapper{
-   margin:0px 0px 0px 5px;
+   margin:0px 5px 0px 5px;
+   display: flex;
    p{
     margin-right: 5px;
     padding: 0px;
 
    }
+}
+.c-main-header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:78px;
+    margin-right: 78px;
+    padding: 0px 10px;
+    .c-main-header-logo{
+        height: auto;
+        width: 105px;
+    }
+    .c-main-header-wrapper-nav{
+        max-width: 100%;
+        .c-main-header-menu{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             justify-content: space-evenly;
+            list-style: none;
+        }
+    }
+}
+.c-main-header-menu-item{
+    padding:0px 8px;
+    text-decoration:none;
+    a{
+        color:  $color-text; 
+        text-decoration: none;
+    }
+
+}
+.c-main-header-sub-menu{
+    display: block;
+    position: absolute;
+   +.c-main-header-menu{
+        display: block;
+        position: relative;
+        right: 0px;
+        // top: 6px;
+        padding: 5px;
+    }
 }
