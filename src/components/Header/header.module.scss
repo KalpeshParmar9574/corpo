@@ -1,0 +1,20 @@
+@import '../../assets/styles/_variable.scss';
+
+.c-sub-header-container {
+    width: 100%;
+    background-color: $panel-color-main;
+}
+.c-sub-header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.c-sub-header-contact-info-wrapper{
+   margin:0px 0px 0px 5px;
+   p{
+    margin-right: 5px;
+    padding: 0px;
+
+   }
+}
